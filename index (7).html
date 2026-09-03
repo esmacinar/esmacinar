@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Esma Cinar — Online Early Years & Primary Tutoring</title>
+<meta name="description" content="Warm, expert online tutoring for young learners with Esma Cinar — a dual-qualified early childhood and primary teacher. Early literacy, English (EAL), school readiness, and Turkish, grounded in Reggio Emilia and nature-based teaching." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232B3E32'/%3E%3Cpath d='M16 26 C15 19 17 16 16 9' stroke='%23EEE8D8' stroke-width='1.6' fill='none' stroke-linecap='round'/%3E%3Cpath d='M16 15 C11 14 9 11 9.5 8 C13 8 15.5 10 16 14 Z' fill='%23C7973C'/%3E%3Cpath d='M16 18 C21 17 23 14 22.5 11 C19 11 16.5 13 16 17 Z' fill='%235E7355'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..500&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --forest:#2B3E32; --forest-deep:#223026; --ink:#26312A;
+    --moss:#5E7355; --honey:#C7973C; --honey-bright:#E2BE72;
+    --paper:#F4F0E6; --paper-2:#EFE9DB; --sage:#E3E8D9;
+    --chalk:#EEE8D8; --chalk-dim:rgba(238,232,216,.74);
+    --line:rgba(38,49,42,.14); --line-chalk:rgba(238,232,216,.20);
+    --shadow:0 18px 44px -24px rgba(34,48,38,.45);
+    --r:18px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Figtree",system-ui,sans-serif;font-size:17px;line-height:1.7;
+    -webkit-font-smoothing:antialiased;}
+  h1,h2,h3,h4{font-family:"Fraunces",Georgia,serif;font-weight:500;
+    line-height:1.06;letter-spacing:-.015em;margin:0;color:inherit;}
+  p{margin:0;}
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 24px;}
+  section{padding:clamp(66px,9vw,122px) 0;}
+  .eyebrow{font-size:.76rem;font-weight:600;text-transform:uppercase;
+    letter-spacing:.17em;color:var(--moss);margin:0 0 18px;}
+  .on-dark .eyebrow{color:var(--honey-bright);}
+  .lead{font-size:1.18rem;line-height:1.62;}
+
+  .btn{display:inline-flex;align-items:center;gap:.5em;font-family:"Figtree";
+    font-weight:600;font-size:.98rem;padding:.86em 1.5em;border-radius:100px;
+    border:1.5px solid transparent;cursor:pointer;transition:transform .2s ease,
+    background .2s ease,border-color .2s ease,color .2s ease;}
+  .btn:focus-visible{outline:3px solid var(--honey);outline-offset:3px;}
+  .btn-primary{background:var(--honey);color:#2a2213;}
+  .btn-primary:hover{transform:translateY(-2px);background:var(--honey-bright);}
+  .btn-ghost{border-color:var(--line);color:var(--ink);background:transparent;}
+  .btn-ghost:hover{transform:translateY(-2px);border-color:var(--moss);}
+  .on-dark .btn-ghost{border-color:var(--line-chalk);color:var(--chalk);}
+  .on-dark .btn-ghost:hover{border-color:var(--chalk);background:rgba(238,232,216,.07);}
+
+  header.nav{position:fixed;inset:0 0 auto 0;z-index:60;transition:background .3s ease,
+    box-shadow .3s ease,border-color .3s ease;border-bottom:1px solid transparent;}
+  header.nav .row{display:flex;align-items:center;justify-content:space-between;height:72px;}
+  .brand{display:flex;align-items:center;gap:10px;font-family:"Fraunces";
+    font-size:1.28rem;font-weight:500;letter-spacing:-.01em;color:var(--chalk);
+    transition:color .3s ease;}
+  .brand .mark{width:30px;height:30px;flex:none;}
+  .brand small{display:block;font-family:"Figtree";font-size:.6rem;font-weight:600;
+    text-transform:uppercase;letter-spacing:.18em;color:var(--chalk-dim);
+    margin-top:1px;transition:color .3s ease;}
+  .nav-right{display:flex;align-items:center;gap:16px;}
+  .navlinks{display:flex;align-items:center;gap:28px;}
+  .navlinks a.lk{font-size:.94rem;font-weight:500;color:var(--chalk);position:relative;
+    padding:4px 0;transition:color .3s ease;}
+  .navlinks a.lk::after{content:"";position:absolute;left:0;bottom:0;height:1.5px;
+    width:0;background:var(--honey);transition:width .25s ease;}
+  .navlinks a.lk:hover::after{width:100%;}
+  .langbtn{display:inline-flex;align-items:center;gap:7px;font-family:"Figtree";
+    font-weight:600;font-size:.85rem;color:var(--chalk);background:transparent;
+    border:1.5px solid var(--line-chalk);border-radius:100px;padding:.5em .9em;
+    cursor:pointer;transition:color .3s,border-color .3s,background .2s;white-space:nowrap;}
+  .langbtn:hover{background:rgba(238,232,216,.08);border-color:var(--chalk);}
+  .langbtn svg{width:15px;height:15px;}
+  .langbtn:focus-visible{outline:3px solid var(--honey);outline-offset:2px;}
+  header.nav.scrolled{background:var(--paper);box-shadow:0 8px 30px -18px rgba(34,48,38,.5);
+    border-color:var(--line);}
+  header.nav.scrolled .brand,header.nav.scrolled .navlinks a.lk{color:var(--ink);}
+  header.nav.scrolled .brand small{color:var(--moss);}
+  header.nav.scrolled .brand .mark .st{stroke:var(--forest);}
+  header.nav.scrolled .langbtn{color:var(--ink);border-color:var(--line);}
+  header.nav.scrolled .langbtn:hover{background:rgba(38,49,42,.05);border-color:var(--moss);}
+  .navToggle{display:none;background:none;border:0;cursor:pointer;padding:8px;}
+  .navToggle span{display:block;width:24px;height:2px;background:var(--chalk);
+    margin:5px 0;transition:.3s;border-radius:2px;}
+  header.nav.scrolled .navToggle span{background:var(--ink);}
+
+  .hero{background:var(--forest);color:var(--chalk);padding-top:0;
+    padding-bottom:clamp(60px,8vw,110px);position:relative;overflow:hidden;}
+  .hero .grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center;}
+  .hero h1{font-size:clamp(2.55rem,5.4vw,4.35rem);color:var(--chalk);}
+  .hero h1 em{font-style:italic;color:var(--honey-bright);}
+  .hero p.sub{color:var(--chalk-dim);font-size:1.16rem;margin-top:22px;max-width:34ch;}
+  .hero .cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px;}
+  .trust{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:34px;font-size:.82rem;color:var(--chalk-dim);}
+  .trust span{display:inline-flex;align-items:center;gap:7px;}
+  .trust b{color:var(--honey-bright);font-weight:700;}
+  .portrait-wrap{position:relative;display:flex;justify-content:center;}
+  .portrait{width:min(340px,80%);aspect-ratio:4/5;border-radius:180px 180px 22px 22px;
+    background:linear-gradient(160deg,#3a5040,#42583f 60%,#4d6247);
+    border:1px solid var(--line-chalk);display:flex;flex-direction:column;
+    align-items:center;justify-content:center;text-align:center;color:var(--chalk-dim);
+    position:relative;z-index:2;overflow:hidden;}
+  .portrait img{border-radius:inherit;}
+  .sprig-hero{position:absolute;z-index:1;width:150px;right:-6px;bottom:-14px;}
+  .sprig-hero.two{left:-18px;top:-10px;bottom:auto;right:auto;width:96px;transform:rotate(18deg);opacity:.85;}
+
+  .stem{stroke-dasharray:420;stroke-dashoffset:420;animation:draw 1.7s ease .25s forwards;}
+  .lf{opacity:0;animation:fadein .6s ease forwards;}
+  @keyframes draw{to{stroke-dashoffset:0;}}
+  @keyframes fadein{to{opacity:1;}}
+
+  .strip{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .strip .wrap{display:flex;flex-wrap:wrap;gap:14px 12px;justify-content:center;padding-top:26px;padding-bottom:26px;}
+  .chip{display:inline-flex;align-items:center;gap:8px;font-size:.83rem;font-weight:500;
+    color:var(--ink);background:var(--paper);border:1px solid var(--line);padding:8px 15px;border-radius:100px;}
+  .chip svg{width:15px;height:15px;flex:none;}
+
+  .shead{max-width:640px;margin-bottom:52px;}
+  .shead.center{margin-left:auto;margin-right:auto;text-align:center;}
+  .shead h2{font-size:clamp(1.95rem,3.9vw,2.95rem);}
+  .shead p{margin-top:16px;color:#4c554b;font-size:1.1rem;}
+  .on-dark .shead p{color:var(--chalk-dim);}
+
+  .services{background:var(--forest);color:var(--chalk);padding-bottom:clamp(32px,4vw,56px);}
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  .card{background:var(--paper);color:var(--ink);border-radius:var(--r);padding:30px 28px;
+    border:1px solid rgba(0,0,0,.04);transition:transform .28s ease,box-shadow .28s ease;display:flex;flex-direction:column;}
+  .card:hover{transform:translateY(-6px);box-shadow:var(--shadow);}
+  .card .ic{width:44px;height:44px;border-radius:12px;background:var(--sage);display:flex;align-items:center;justify-content:center;margin-bottom:20px;}
+  .card .ic svg{width:24px;height:24px;}
+  .card h3{font-size:1.3rem;margin-bottom:10px;}
+  .card p{color:#4c554b;font-size:.97rem;line-height:1.6;flex:1;}
+  .card .age{margin-top:18px;font-size:.7rem;font-weight:600;text-transform:uppercase;letter-spacing:.04em;color:var(--moss);white-space:nowrap;}
+
+  .about{background:var(--forest);color:var(--chalk);padding-top:0;}
+  .about .grid{display:block;}
+  .about .bio{max-width:820px;margin:0 auto;}
+  .about .bio p+p{margin-top:18px;}
+  .sig{margin-top:26px;font-family:"Fraunces";font-style:italic;font-size:1.5rem;color:var(--forest);}
+  .about .eyebrow{font-size:1.05rem;}
+  .on-dark .sig{color:var(--chalk);}
+
+  .approach{background:var(--paper-2);padding-top:clamp(32px,4vw,56px);}
+  .principles{display:grid;grid-template-columns:1fr 1fr;gap:34px 48px;}
+  .principle{display:flex;gap:18px;}
+  .principle .lf-ic{flex:none;width:34px;height:34px;margin-top:2px;}
+  .principle h3{font-size:1.28rem;margin-bottom:8px;}
+  .principle p{color:#4c554b;font-size:1rem;}
+
+  .quals{background:var(--forest);color:var(--chalk);}
+  .qgrid{display:grid;grid-template-columns:1fr 1fr;gap:2px 48px;}
+  .qitem{display:flex;gap:14px;padding:15px 0;border-bottom:1px solid var(--line-chalk);align-items:flex-start;}
+  .qitem svg{width:18px;height:18px;flex:none;margin-top:4px;}
+  .qitem b{font-weight:600;color:var(--chalk);}
+  .qitem small{display:block;color:var(--chalk-dim);font-size:.86rem;margin-top:2px;}
+
+  .quotes{background:var(--paper);}
+  .qcards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  .quote{background:var(--sage);border-radius:var(--r);padding:30px 28px;position:relative;}
+  .quote .mk{font-family:"Fraunces";font-size:3.4rem;line-height:.7;color:var(--honey);height:26px;display:block;}
+  .quote p{font-size:1.02rem;line-height:1.6;color:var(--ink);margin:14px 0 18px;}
+  .quote cite{font-style:normal;font-weight:600;font-size:.9rem;color:var(--moss);}
+  .note{margin-top:22px;text-align:center;font-size:.84rem;color:#7c8574;font-style:italic;}
+
+  .guide .box{background:var(--forest);color:var(--chalk);border-radius:26px;
+    padding:clamp(34px,5vw,58px);display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;position:relative;overflow:hidden;}
+  .guide h2{font-size:clamp(1.7rem,3.2vw,2.35rem);color:var(--chalk);}
+  .guide p{color:var(--chalk-dim);margin-top:14px;}
+  .optin{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px;}
+  .optin input{flex:1;min-width:200px;padding:.85em 1.1em;border-radius:100px;
+    border:1px solid var(--line-chalk);background:rgba(238,232,216,.08);color:var(--chalk);font-family:"Figtree";font-size:.96rem;}
+  .optin input::placeholder{color:var(--chalk-dim);}
+  .optin input:focus{outline:2px solid var(--honey);}
+  .sprig-guide{position:absolute;right:-10px;bottom:-16px;width:120px;opacity:.5;}
+
+  .contact{background:var(--paper-2);}
+  .contact .grid{display:grid;grid-template-columns:1fr;gap:44px;max-width:620px;}
+  .contact form{display:grid;gap:14px;}
+  .field label{font-size:.82rem;font-weight:600;color:var(--ink);margin-bottom:6px;display:block;}
+  .field input,.field textarea{width:100%;padding:.82em 1em;border-radius:12px;border:1px solid var(--line);
+    background:var(--paper);font-family:"Figtree";font-size:.97rem;color:var(--ink);resize:vertical;}
+  .field input:focus,.field textarea:focus{outline:2px solid var(--moss);border-color:transparent;}
+  .row2{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+  .contact .info h3{font-size:1.5rem;margin-bottom:14px;}
+  .contact .info p{color:#4c554b;margin-bottom:26px;}
+  .infoline{display:flex;align-items:center;gap:12px;margin-bottom:14px;font-weight:500;}
+  .infoline svg{width:20px;height:20px;color:var(--moss);flex:none;}
+  .avail{margin-top:26px;padding:16px 18px;background:var(--sage);border-radius:14px;font-size:.92rem;color:#3f4a3c;}
+  .avail-strong{color:var(--forest);font-weight:700;}
+  .opt{font-weight:400;color:#7c8574;}
+
+  footer{background:var(--forest-deep);color:var(--chalk);padding:64px 0 32px;}
+  .fgrid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px;}
+  .fbrand .brand{color:var(--chalk);}
+  .fbrand p{color:var(--chalk-dim);font-size:.92rem;margin-top:16px;max-width:30ch;}
+  .fcol h4{font-family:"Figtree";font-size:.78rem;text-transform:uppercase;letter-spacing:.14em;color:var(--honey-bright);margin-bottom:16px;font-weight:600;}
+  .fcol a{display:block;color:var(--chalk-dim);font-size:.93rem;padding:5px 0;transition:color .2s;}
+  .fcol a:hover{color:var(--chalk);}
+  .social{display:flex;gap:12px;margin-top:4px;}
+  .social a{width:38px;height:38px;border-radius:50%;border:1px solid var(--line-chalk);display:flex;align-items:center;justify-content:center;transition:.2s;}
+  .social a:hover{background:rgba(238,232,216,.09);border-color:var(--chalk);}
+  .social svg{width:17px;height:17px;}
+  .fbot{margin-top:48px;padding-top:22px;border-top:1px solid var(--line-chalk);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.82rem;color:var(--chalk-dim);}
+
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease;}
+  .reveal.in{opacity:1;transform:none;}
+
+  @media(max-width:900px){
+    .hero .grid{grid-template-columns:1fr;gap:40px;}
+    .portrait-wrap{order:-1;}
+    .cards,.qcards{grid-template-columns:1fr 1fr;}
+    .about .grid,.contact .grid,.guide .box{grid-template-columns:1fr;gap:34px;}
+    .principles{grid-template-columns:1fr;}
+    .qgrid{grid-template-columns:1fr;}
+    .fgrid{grid-template-columns:1fr 1fr;gap:32px;}
+    .navlinks{position:fixed;inset:72px 0 auto 0;background:var(--paper);flex-direction:column;gap:0;
+      padding:8px 0 16px;box-shadow:var(--shadow);border-bottom:1px solid var(--line);display:none;}
+    .navlinks.open{display:flex;}
+    .navlinks a.lk{color:var(--ink);width:100%;padding:14px 24px;}
+    .navlinks .btn{margin:10px 24px 0;}
+    .navToggle{display:block;}
+  }
+  @media(max-width:560px){
+    .cards,.qcards,.row2{grid-template-columns:1fr;}
+    .fgrid{grid-template-columns:1fr;}
+    section{padding:66px 0;}
+    .langbtn{font-size:.8rem;padding:.45em .75em;}
+  }
+  @media(prefers-reduced-motion:reduce){
+    .reveal{opacity:1;transform:none;transition:none;}
+    .stem{animation:none;stroke-dashoffset:0;}
+    .lf{animation:none;opacity:1;}
+    html{scroll-behavior:auto;}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="wrap row">
+    <a class="brand" href="#top" aria-label="Esma Cinar, home">
+      <svg class="mark" viewBox="0 0 32 32" aria-hidden="true">
+        <path class="st" d="M16 27 C15 20 17 17 16 9.5" stroke="#EEE8D8" stroke-width="1.7" fill="none" stroke-linecap="round"/>
+        <path d="M16 15.5 C11 14.5 9 11.2 9.6 8 C13 8 15.6 10.2 16 14 Z" fill="#C7973C"/>
+        <path d="M16 19 C21 18 23 14.8 22.4 11.6 C19 11.6 16.4 13.8 16 17.6 Z" fill="#5E7355"/>
+      </svg>
+      <span data-en="Esma Cinar<small>Online tutoring</small>" data-tr="Esma Cinar<small>Online özel ders</small>">Esma Cinar<small>Online tutoring</small></span>
+    </a>
+    <div class="nav-right">
+      <nav class="navlinks" id="menu" aria-label="Primary">
+        <a class="lk" href="#services" data-en="Lessons" data-tr="Dersler">Lessons</a>
+        <a class="lk" href="#about" data-en="About" data-tr="Hakkımda">About</a>
+        <a class="lk" href="#approach" data-en="Approach" data-tr="Yaklaşımım">Approach</a>
+        <a class="lk" href="#quals" data-en="Qualifications" data-tr="Nitelikler">Qualifications</a>
+        <a class="btn btn-primary" href="#contact" data-en="Book an intro call" data-tr="Ücretsiz görüşme">Book an intro call</a>
+      </nav>
+      <button class="langbtn" id="lang" aria-label="Bu siteyi Türkçe görüntüle">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 010 18M12 3a15 15 0 000 18"/></svg>
+        <span id="langlabel">Türkçe</span>
+      </button>
+      <button class="navToggle" id="toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<span id="top"></span>
+
+<!-- ============ HERO ============ -->
+<section class="hero on-dark">
+  <div class="wrap" style="padding-top:150px;">
+    <div class="grid">
+      <div class="reveal">
+        <p class="eyebrow" data-en="Online early years &amp; primary tutoring" data-tr="Online erken çocukluk ve ilkokul özel dersleri">Online early years &amp; primary tutoring</p>
+        <h1 data-en="Nurturing confident, curious learners — <em>wherever you are</em>." data-tr="Kendine güvenen, meraklı öğrenciler yetiştiriyorum — <em>neredeyseniz orada</em>.">Nurturing confident, curious learners — <em>wherever you are</em>.</h1>
+        <p class="sub" data-en="I'm Esma, a dual-qualified early childhood and primary teacher with 15+ years' experience in Australia and abroad. I offer warm, playful one-to-one online lessons in early literacy, English, and school readiness." data-tr="Ben Esma; Avustralya ve yurt dışında 15+ yıllık deneyime sahip, erken çocukluk ve ilkokul alanlarında çift diplomalı bir öğretmenim. Erken okuryazarlık, İngilizce ve okula hazırlık konularında sıcak ve eğlenceli birebir online dersler veriyorum.">I'm Esma, a dual-qualified early childhood and primary teacher with 15+ years' experience in Australia and abroad. I offer warm, playful one-to-one online lessons in early literacy, English, and school readiness.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#contact" data-en="Book a free intro call" data-tr="Ücretsiz tanışma görüşmesi">Book a free intro call</a>
+          <a class="btn btn-ghost" href="#services" data-en="Explore lessons" data-tr="Dersleri keşfedin">Explore lessons</a>
+        </div>
+        <div class="trust">
+          <span data-en="<b>&#10003;</b> Master of Teaching" data-tr="<b>&#10003;</b> Öğretmenlik Yüksek Lisansı"><b>&#10003;</b> Master of Teaching</span>
+          <span data-en="<b>&#10003;</b> English &amp; Türkçe" data-tr="<b>&#10003;</b> İngilizce ve Türkçe"><b>&#10003;</b> English &amp; Türkçe</span>
+          <span data-en="<b>&#10003;</b> Reggio &amp; nature-based" data-tr="<b>&#10003;</b> Reggio ve doğa temelli"><b>&#10003;</b> Reggio &amp; nature-based</span>
+        </div>
+      </div>
+      <div class="portrait-wrap reveal">
+        <div class="portrait">
+          <img src="esma-photo.png" alt="Esma Cinar" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;" />
+        </div>
+        <svg class="sprig-hero" viewBox="0 0 120 200" aria-hidden="true">
+          <path class="stem" d="M60 198 C57 168 63 150 60 122 C58 100 62 80 60 46 C59 38 60 32 60 24" stroke="#EEE8D8" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+          <g fill="#C7973C">
+            <path class="lf" style="animation-delay:.8s" d="M60 128 C48 126 41 118 43 106 C56 108 63 116 60 128 Z"/>
+            <path class="lf" style="animation-delay:1.05s" d="M60 150 C72 148 79 140 77 128 C64 130 57 138 60 150 Z"/>
+          </g>
+          <g fill="#5E7355">
+            <path class="lf" style="animation-delay:1.25s" d="M60 92 C71 90 78 82 76 71 C64 73 57 81 60 92 Z"/>
+            <path class="lf" style="animation-delay:1.45s" d="M60 70 C49 68 42 60 44 49 C56 51 63 59 60 70 Z"/>
+          </g>
+          <path class="lf" style="animation-delay:1.6s" fill="#C7973C" d="M60 24 C55 18 55 10 60 5 C65 10 65 18 60 24 Z"/>
+        </svg>
+        <svg class="sprig-hero two" viewBox="0 0 120 200" aria-hidden="true">
+          <path d="M60 196 C58 160 62 130 60 80 C59 60 61 44 60 28" stroke="rgba(238,232,216,.5)" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <path fill="rgba(226,190,114,.7)" d="M60 96 C71 94 78 86 76 75 C64 77 57 85 60 96 Z"/>
+          <path fill="rgba(94,115,85,.8)" d="M60 120 C49 118 42 110 44 99 C56 101 63 109 60 120 Z"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CREDENTIAL STRIP ============ -->
+<div class="strip">
+  <div class="wrap">
+    <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="#5E7355" stroke-width="1.6"><path d="M12 3l2.5 5 5.5.8-4 3.9 1 5.5L12 21l-5-2.3 1-5.5-4-3.9 5.5-.8z"/></svg><span data-en="15+ years teaching" data-tr="15+ yıl öğretmenlik">15+ years teaching</span></span>
+    <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="#5E7355" stroke-width="1.6"><path d="M3 8l9-4 9 4-9 4-9-4z"/><path d="M7 10.5V15c0 1.5 2.5 2.5 5 2.5s5-1 5-2.5v-4.5"/></svg><span data-en="Master of Teaching" data-tr="Öğretmenlik Yüksek Lisansı">Master of Teaching</span></span>
+    <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="#5E7355" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 000 18M3.5 9h17M3.5 15h17"/></svg><span data-en="IB PYP experience" data-tr="IB PYP deneyimi">IB PYP experience</span></span>
+    <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="#5E7355" stroke-width="1.6"><path d="M12 21c-5-4-8-7-8-11a4 4 0 018-1 4 4 0 018 1c0 4-3 7-8 11z"/></svg><span data-en="Reggio Emilia" data-tr="Reggio Emilia">Reggio Emilia</span></span>
+    <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="#5E7355" stroke-width="1.6"><path d="M12 22V12M12 12c-4 0-6-3-5-7 4 0 6 3 5 7zM12 14c4 0 6-2 6-6-4 0-6 2-6 6z"/></svg><span data-en="Forest Kindergarten" data-tr="Orman Anaokulu">Forest Kindergarten</span></span>
+    <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="#5E7355" stroke-width="1.6"><path d="M4 12h16M12 4v16M6 7c3 1 9 1 12 0M6 17c3-1 9-1 12 0"/></svg><span data-en="English &amp; Türkçe" data-tr="İngilizce ve Türkçe">English &amp; Türkçe</span></span>
+  </div>
+</div>
+
+<!-- ============ SERVICES ============ -->
+  <section class="services on-dark" id="services">
+  <div class="wrap">
+    <div class="shead">
+      <p class="eyebrow" data-en="Ways we can learn together" data-tr="Birlikte öğrenme yollarımız">Ways we can learn together</p>
+      <h2 data-en="Lessons shaped around you" data-tr="Size göre şekillenen dersler">Lessons shaped around you</h2>
+      <p data-en="Every session is one-to-one and online — planned around who you are, your pace, and what you're working towards next." data-tr="Her ders birebir ve online; kim olduğunuza, kendi hızınıza ve bir sonraki hedefinize göre planlanır.">Every session is one-to-one and online — planned around who you are, your pace, and what you're working towards next.</p>
+    </div>
+    <div class="cards">
+      <div class="card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#5E7355" stroke-width="1.6"><path d="M4 19h16M6 15l4-5 3 3 5-7"/></svg></div>
+        <h3 data-en="IELTS Preparation" data-tr="IELTS Hazırlık">IELTS Preparation</h3>
+        <p data-en="Personalised planning and strategies to develop every skill and reach your target score." data-tr="Kişiye özel planlama ve stratejilerle, tüm becerilerinizi geliştirin ve hedef skorunuza ulaşın.">Personalised planning and strategies to develop every skill and reach your target score.</p>
+        <div class="age" data-en="Academic &amp; General Training · Online" data-tr="Akademik &amp; Genel Eğitim · Online">Academic &amp; General Training · Online</div>
+      </div>
+      <div class="card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#5E7355" stroke-width="1.6"><path d="M4 14a8 8 0 0116 0M4 14v4a2 2 0 002 2h1v-6H4zM20 14v4a2 2 0 01-2 2h-1v-6h3z"/></svg></div>
+        <h3 data-en="PTE Preparation" data-tr="PTE Hazırlık">PTE Preparation</h3>
+        <p data-en="Practice tailored to the PTE format, with time management and effective techniques to hit your target score." data-tr="PTE formatına yönelik pratik, zaman yönetimi ve etkili tekniklerle istediğiniz skoru hedefleyin.">Practice tailored to the PTE format, with time management and effective techniques to hit your target score.</p>
+        <div class="age" data-en="Personalised study plan · Online" data-tr="Kişiye özel çalışma planı · Online">Personalised study plan · Online</div>
+      </div>
+      <div class="card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#5E7355" stroke-width="1.6"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 20l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></div>
+        <h3 data-en="General English" data-tr="Genel İngilizce">General English</h3>
+        <p data-en="Develop your speaking, listening, reading and writing skills — English for everyday life, work and travel." data-tr="Konuşma, dinleme, okuma ve yazma becerilerinizi geliştirin. Günlük yaşam, iş ve seyahat için İngilizce.">Develop your speaking, listening, reading and writing skills — English for everyday life, work and travel.</p>
+        <div class="age" data-en="All levels · Online" data-tr="Tüm seviyeler · Online">All levels · Online</div>
+      </div>
+      <div class="card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#5E7355" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.5-7 8-7s8 3 8 7"/></svg></div>
+        <h3 data-en="One-to-One Online English" data-tr="Birebir Online İngilizce">One-to-One Online English</h3>
+        <p data-en="Improve your English at your own pace, with private online lessons shaped around your needs, level and goals." data-tr="İhtiyaçlarınıza, seviyenize ve hedeflerinize göre şekillenen birebir online derslerle İngilizcenizi kendi hızınızda geliştirin.">Improve your English at your own pace, with private online lessons shaped around your needs, level and goals.</p>
+        <div class="age" data-en="Personalised · Online" data-tr="Kişiye özel · Online">Personalised · Online</div>
+      </div>
+      <div class="card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#5E7355" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M9 10h.01M15 10h.01M8 15c1 1 2.5 1.5 4 1.5s3-.5 4-1.5"/></svg></div>
+        <h3 data-en="Speaking Lessons for Kids &amp; Teens" data-tr="Çocuklar ve Gençler İçin Konuşma Dersleri">Speaking Lessons for Kids &amp; Teens</h3>
+        <p data-en="Online speaking lessons shaped around the student's level and interests, to help them use English more comfortably and confidently." data-tr="İngilizceyi daha rahat ve özgüvenli kullanmaya yönelik, öğrencinin seviyesine ve ilgi alanlarına göre şekillenen online konuşma dersleri.">Online speaking lessons shaped around the student's level and interests, to help them use English more comfortably and confidently.</p>
+        <div class="age" data-en="Primary · Middle · High School · Online" data-tr="İlkokul · Ortaokul · Lise · Online">Primary · Middle · High School · Online</div>
+      </div>
+      <div class="card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#5E7355" stroke-width="1.6"><path d="M20.8 8.6c0 4.6-8.8 10.4-8.8 10.4S3.2 13.2 3.2 8.6a4.6 4.6 0 018.8-1.8 4.6 4.6 0 018.8 1.8z"/></svg></div>
+        <h3 data-en="Parent Consulting" data-tr="Ebeveyn Danışmanlığı">Parent Consulting</h3>
+        <p data-en="Guidance to support your child's language development and be effectively involved in their English learning journey." data-tr="Çocuğunuzun dil gelişimini desteklemek ve İngilizce öğrenme sürecine siz de etkili şekilde dahil olmak için rehberlik.">Guidance to support your child's language development and be effectively involved in their English learning journey.</p>
+        <div class="age" data-en="Supportive &amp; practical tips · Online" data-tr="Destekleyici &amp; pratik öneriler · Online">Supportive &amp; practical tips · Online</div>
+      </div>
+    </div>
+  <div class="reveal" style="margin-top:22px;background:#F4F0E6;border-radius:18px;padding:32px 34px;display:flex;gap:26px;align-items:flex-start;flex-wrap:wrap;">
+      <div style="width:52px;height:52px;border-radius:50%;background:rgba(94,115,85,0.12);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#5E7355" stroke-width="1.6" width="26" height="26"><path d="M2 16l20-8-8 20-3-8-9-4z"/></svg>
+      </div>
+      <div style="flex:1;min-width:240px;">
+        <h3 style="margin-bottom:8px;color:#2B3E32;" data-en="IELTS &amp; PTE Preparation for Migration" data-tr="Göçmenlik İçin IELTS ve PTE Hazırlık">IELTS &amp; PTE Preparation for Migration</h3>
+        <p style="margin:0;color:#4B4A44;" data-en="Personalised preparation and strategic support for the English language exams your migration application requires." data-tr="Göçmenlik başvurularınızda ihtiyaç duyduğunuz İngilizce dil sınavları için kişiye özel hazırlık ve stratejik destek.">Personalised preparation and strategic support for the English language exams your migration application requires.</p>
+      </div>
+      <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;min-width:260px;color:#2B3E32;">
+        <li style="display:flex;gap:8px;align-items:center;" data-en="Personalised study plan" data-tr="Kişiye özel çalışma planı">✓ Personalised study plan</li>
+        <li style="display:flex;gap:8px;align-items:center;" data-en="Mock tests &amp; detailed feedback" data-tr="Deneme sınavları &amp; detaylı geri bildirim">✓ Mock tests &amp; detailed feedback</li>
+        <li style="display:flex;gap:8px;align-items:center;" data-en="Time management &amp; effective strategies" data-tr="Zaman yönetimi &amp; etkili stratejiler">✓ Time management &amp; effective strategies</li>
+      </ul>
+    </div>
+  </div>
+  </section>
+<!-- ============ ABOUT ============ -->
+<section class="about on-dark" id="about">
+  <div class="wrap">
+    <div class="grid">
+      <div class="bio">
+        <p class="eyebrow" data-en="Meet Esma" data-tr="Esma ile tanışın">Meet Esma</p>
+        <h2 data-en="Fifteen years of English teaching in Turkey and Australia" data-tr="On beş yıldır Türkiye ve Avustralya'da İngilizce öğretmenliği">Fifteen years of English teaching in Turkey and Australia</h2>
+        <div style="margin-top:22px;">
+          <p data-en="Hi, I'm Esma 🌿 I've been teaching English for over 15 years. I completed my bachelor's degree in English Language Teaching in Turkey, and my master's in education in Australia. Over the years I've had the chance to work with students of different ages, levels and cultures, both in Turkey and Australia." data-tr="Merhaba, ben Esma 🌿 15 yılı aşkın süredir İngilizce öğretiyorum. İngilizce Öğretmenliği lisans eğitimimi Türkiye'de, eğitim alanındaki yüksek lisansımı ise Avustralya'da tamamladım. Yıllar içinde Türkiye'de ve Avustralya'da farklı yaşlardan, seviyelerden ve kültürlerden öğrencilerle çalışma fırsatım oldu.">Hi, I'm Esma 🌿 I've been teaching English for over 15 years. I completed my bachelor's degree in English Language Teaching in Turkey, and my master's in education in Australia. Over the years I've had the chance to work with students of different ages, levels and cultures, both in Turkey and Australia.</p>
+          <p data-en="For me, learning English is so much more than memorizing rules or exam techniques. In my lessons, I care about progressing according to the student's level, goals and learning style — about really being able to use English and communicate with confidence." data-tr="Benim için İngilizce öğrenmek; kuralları ezberlemekten ya da sınav tekniklerini öğrenmekten çok daha fazlası. Derslerimde öğrencinin seviyesine, hedeflerine ve öğrenme biçimine göre ilerlemeyi; İngilizceyi gerçekten kullanabilmesini ve kendine güvenerek iletişim kurabilmesini önemsiyorum.">For me, learning English is so much more than memorizing rules or exam techniques. In my lessons, I care about progressing according to the student's level, goals and learning style — about really being able to use English and communicate with confidence.</p>
+          <p data-en="For IELTS &amp; PTE preparation too, instead of applying the same program to everyone, I build a personalised roadmap by identifying each student's strengths and areas to develop. Because everyone's goal, way of learning and journey is different. 🌱" data-tr="IELTS &amp; PTE hazırlığında da herkese aynı programı uygulamak yerine, öğrencinin güçlü olduğu ve geliştirmesi gereken alanları belirleyerek kişiye özel bir yol haritası oluşturuyorum. Çünkü herkesin hedefi, öğrenme biçimi ve yolculuğu farklı. 🌱">For IELTS &amp; PTE preparation too, instead of applying the same program to everyone, I build a personalised roadmap by identifying each student's strengths and areas to develop. Because everyone's goal, way of learning and journey is different. 🌱</p>
+          <p style="font-style:italic;margin-top:18px;" data-en="Your goal. Your pace. Your learning journey." data-tr="Senin hedefin. Senin hızın. Senin öğrenme yolculuğun.">Your goal. Your pace. Your learning journey.</p>
+        </div>
+        <p class="sig">— Esma</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ APPROACH ============ -->
+<section class="approach" id="approach">
+  <div class="wrap">
+    <div class="shead center">
+      <p class="eyebrow" data-en="How I teach" data-tr="Nasıl öğretiyorum">How I teach</p>
+      <h2 data-en="Learning shaped around you" data-tr="Size göre şekillenen bir öğrenme deneyimi">Learning shaped around you</h2>
+    </div>
+
+    <div class="principles">
+
+      <div class="principle reveal">
+        <svg class="lf-ic" viewBox="0 0 24 24" fill="none" stroke="#5E7355" stroke-width="1.5" aria-hidden="true">
+          <path d="M12 22V11M12 11C6 11 4 6 5 2c5 0 7 4 7 9zM12 12c5 0 7-2 7-6-5 0-7 2-7 6z"/>
+        </svg>
+        <div>
+          <h3 data-en="Personalised to your goals" data-tr="Hedeflerinize göre kişiselleştirilmiş">
+            Personalised to your goals
+          </h3>
+          <p
+            data-en="Every learner is different. I plan lessons around your level, goals and learning needs — whether you're preparing for IELTS or PTE, improving your everyday English, or building confidence in speaking."
+            data-tr="Her öğrencinin ihtiyacı farklıdır. Dersleri seviyenize, hedeflerinize ve öğrenme ihtiyaçlarınıza göre planlarım; ister IELTS veya PTE'ye hazırlanıyor, ister günlük İngilizcenizi geliştiriyor ya da konuşurken kendinize daha çok güvenmek istiyor olun.">
+            Every learner is different. I plan lessons around your level, goals and learning needs — whether you're preparing for IELTS or PTE, improving your everyday English, or building confidence in speaking.
+          </p>
+        </div>
+      </div>
+
+      <div class="principle reveal">
+        <svg class="lf-ic" viewBox="0 0 24 24" fill="none" stroke="#5E7355" stroke-width="1.5" aria-hidden="true">
+          <path d="M12 22V11M12 11C6 11 4 6 5 2c5 0 7 4 7 9zM12 12c5 0 7-2 7-6-5 0-7 2-7 6z"/>
+        </svg>
+        <div>
+          <h3 data-en="English you can actually use" data-tr="Gerçek hayatta kullanabileceğiniz İngilizce">
+            English you can actually use
+          </h3>
+          <p
+            data-en="Language is more than grammar and vocabulary. My lessons focus on using English actively and naturally, helping you communicate with greater confidence in real-life situations."
+            data-tr="Dil, gramer ve kelime bilgisinden çok daha fazlasıdır. Derslerimde İngilizceyi aktif ve doğal bir şekilde kullanmaya odaklanır; gerçek yaşamda daha rahat ve özgüvenli iletişim kurmanızı desteklerim.">
+            Language is more than grammar and vocabulary. My lessons focus on using English actively and naturally, helping you communicate with greater confidence in real-life situations.
+          </p>
+        </div>
+      </div>
+
+      <div class="principle reveal">
+        <svg class="lf-ic" viewBox="0 0 24 24" fill="none" stroke="#5E7355" stroke-width="1.5" aria-hidden="true">
+          <path d="M12 22V11M12 11C6 11 4 6 5 2c5 0 7 4 7 9zM12 12c5 0 7-2 7-6-5 0-7 2-7 6z"/>
+        </svg>
+        <div>
+          <h3 data-en="Clear guidance and progress" data-tr="Net yönlendirme ve düzenli ilerleme">
+            Clear guidance and progress
+          </h3>
+          <p
+            data-en="We identify where you are, where you want to go and what is holding you back. Through focused practice and regular feedback, we work step by step towards measurable progress."
+            data-tr="Nerede olduğunuzu, nereye ulaşmak istediğinizi ve gelişiminizin önünde nelerin durduğunu birlikte belirleriz. Odaklı çalışmalar ve düzenli geri bildirimlerle hedeflerinize adım adım ilerleriz.">
+            We identify where you are, where you want to go and what is holding you back. Through focused practice and regular feedback, we work step by step towards measurable progress.
+          </p>
+        </div>
+      </div>
+
+      <div class="principle reveal">
+        <svg class="lf-ic" viewBox="0 0 24 24" fill="none" stroke="#5E7355" stroke-width="1.5" aria-hidden="true">
+          <path d="M12 22V11M12 11C6 11 4 6 5 2c5 0 7 4 7 9zM12 12c5 0 7-2 7-6-5 0-7 2-7 6z"/>
+        </svg>
+        <div>
+          <h3 data-en="Engaging learning for children and young people" data-tr="Çocuklar ve gençler için keyifli öğrenme">
+            Engaging learning for children and young people
+          </h3>
+          <p
+            data-en="For younger learners, lessons are interactive, encouraging and age-appropriate. I use their interests, curiosity and strengths to help them speak English more naturally and develop a positive relationship with the language."
+            data-tr="Çocuklar ve gençlerle derslerimi etkileşimli, destekleyici ve yaşlarına uygun şekilde planlarım. İlgi alanlarından, meraklarından ve güçlü yönlerinden yola çıkarak İngilizceyi daha doğal konuşmalarını ve dille olumlu bir bağ kurmalarını desteklerim.">
+            For younger learners, lessons are interactive, encouraging and age-appropriate. I use their interests, curiosity and strengths to help them speak English more naturally and develop a positive relationship with the language.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- ============ QUALIFICATIONS ============ -->
+<section class="quals on-dark" id="quals">
+  <div class="wrap">
+    <div class="shead">
+      <p class="eyebrow"
+         data-en="Qualifications &amp; experience"
+         data-tr="Eğitim ve deneyim">
+        Qualifications &amp; experience
+      </p>
+
+      <h2
+        data-en="Qualified, experienced and internationally minded"
+        data-tr="Eğitimli, deneyimli ve uluslararası bir bakış açısı">
+        Qualified, experienced and internationally minded
+      </h2>
+    </div>
+
+    <div class="qgrid">
+
+      <div class="qitem">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#E2BE72" stroke-width="1.7">
+          <path d="M20 6L9 17l-5-5"/>
+        </svg>
+        <div>
+          <b
+            data-en="BA in English Language Teaching"
+            data-tr="İngilizce Öğretmenliği Lisansı">
+            BA in English Language Teaching
+          </b>
+          <small
+            data-en="Çukurova University, Turkey"
+            data-tr="Çukurova Üniversitesi, Türkiye">
+            Çukurova University, Turkey
+          </small>
+        </div>
+      </div>
+
+      <div class="qitem">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#E2BE72" stroke-width="1.7">
+          <path d="M20 6L9 17l-5-5"/>
+        </svg>
+        <div>
+          <b
+            data-en="Master of Teaching (Primary &amp; Early Childhood)"
+            data-tr="Öğretmenlik Yüksek Lisansı (İlkokul ve Erken Çocukluk)">
+            Master of Teaching (Primary &amp; Early Childhood)
+          </b>
+          <small
+            data-en="Deakin University, Melbourne"
+            data-tr="Deakin Üniversitesi, Melbourne">
+            Deakin University, Melbourne
+          </small>
+        </div>
+      </div>
+
+      <div class="qitem">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#E2BE72" stroke-width="1.7">
+          <path d="M20 6L9 17l-5-5"/>
+        </svg>
+        <div>
+          <b
+            data-en="Registered Teacher — VIT"
+            data-tr="VIT Kayıtlı Öğretmen">
+            Registered Teacher — VIT
+          </b>
+          <small
+            data-en="Victorian Institute of Teaching, Australia"
+            data-tr="Victoria Öğretmenlik Enstitüsü, Avustralya">
+            Victorian Institute of Teaching, Australia
+          </small>
+        </div>
+      </div>
+
+      <div class="qitem">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#E2BE72" stroke-width="1.7">
+          <path d="M20 6L9 17l-5-5"/>
+        </svg>
+        <div>
+          <b
+            data-en="Diploma of Early Childhood Education"
+            data-tr="Erken Çocukluk Eğitimi Diploması">
+            Diploma of Early Childhood Education
+          </b>
+          <small
+            data-en="TMG College, Melbourne"
+            data-tr="TMG College, Melbourne">
+            TMG College, Melbourne
+          </small>
+        </div>
+      </div>
+
+      <div class="qitem">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#E2BE72" stroke-width="1.7">
+          <path d="M20 6L9 17l-5-5"/>
+        </svg>
+        <div>
+          <b
+            data-en="15+ Years of Teaching Experience"
+            data-tr="15+ Yıllık Öğretmenlik Deneyimi">
+            15+ Years of Teaching Experience
+          </b>
+          <small
+            data-en="English, primary and early childhood education"
+            data-tr="İngilizce, ilkokul ve erken çocukluk eğitimi">
+            English, primary and early childhood education
+          </small>
+        </div>
+      </div>
+
+      <div class="qitem">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#E2BE72" stroke-width="1.7">
+          <path d="M20 6L9 17l-5-5"/>
+        </svg>
+        <div>
+          <b
+            data-en="International Teaching Experience"
+            data-tr="Uluslararası Öğretmenlik Deneyimi">
+            International Teaching Experience
+          </b>
+          <small
+            data-en="Teaching experience in Australia and Turkey"
+            data-tr="Avustralya ve Türkiye'de öğretmenlik deneyimi">
+            Teaching experience in Australia and Turkey
+          </small>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <p class="eyebrow"
+           data-en="Get in touch"
+           data-tr="İletişime geçin">
+          Get in touch
+        </p>
+
+        <h2
+          style="font-size:clamp(1.9rem,3.6vw,2.7rem);"
+          data-en="Let's find the right learning path for you"
+          data-tr="Hedefinize uygun öğrenme yolunu birlikte belirleyelim">
+          Let's find the right learning path for you
+        </h2>
+
+        <p
+          style="margin-top:16px;color:#4c554b;"
+          data-en="Tell me a little about yourself, your learning goals or the learner you'd like support for. I'll be in touch to arrange a free 15-minute chat."
+          data-tr="Kendiniz, öğrenme hedefleriniz veya destek almak istediğiniz öğrenci hakkında biraz bilgi verin. Size uygun ders seçeneğini konuşmak için ücretsiz 15 dakikalık bir görüşme ayarlayalım.">
+          Tell me a little about yourself, your learning goals or the learner you'd like support for. I'll be in touch to arrange a free 15-minute chat.
+        </p>
+
+        <form id="contactForm" style="margin-top:26px;">
+
+          <div class="row2">
+            <div class="field">
+              <label for="pn"
+                     data-en="Your name"
+                     data-tr="Adınız">
+                Your name
+              </label>
+              <input id="pn" name="name" type="text" required />
+            </div>
+
+            <div class="field">
+              <label for="pe"
+                     data-en="Email"
+                     data-tr="E-posta">
+                Email
+              </label>
+              <input id="pe" name="email" type="email" required />
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="cy">
+              <span
+                data-en="Learner's age, level or exam goal"
+                data-tr="Öğrencinin yaşı, seviyesi veya sınav hedefi">
+                Learner's age, level or exam goal
+              </span>
+              <span
+                class="opt"
+                data-en="(optional)"
+                data-tr="(isteğe bağlı)">
+                (optional)
+              </span>
+            </label>
+            <input id="cy" name="year" type="text" />
+          </div>
+
+          <div class="field">
+            <label for="pm"
+                   data-en="What would you like help with?"
+                   data-tr="Hangi konuda destek almak istersiniz?">
+              What would you like help with?
+            </label>
+
+            <textarea id="pm" name="message" rows="4" required></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="btn btn-primary"
+            style="justify-content:center;"
+            data-en="Send message"
+            data-tr="Mesaj gönder">
+            Send message
+          </button>
+
+        </form>
+      </div>
+
+      <div class="info">
+        <h3
+          data-en="Prefer to reach out directly?"
+          data-tr="Doğrudan iletişime geçmek ister misiniz?">
+          Prefer to reach out directly?
+        </h3>
+
+        <p
+          data-en="I'd love to hear from you. I usually reply within a day."
+          data-tr="Sizden haber almak isterim. Genellikle bir gün içinde yanıt veririm.">
+          I'd love to hear from you. I usually reply within a day.
+        </p>
+
+        <div class="infoline">
+          <svg viewBox="0 0 24 24"
+               fill="none"
+               stroke="currentColor"
+               stroke-width="1.6">
+            <rect x="3" y="5" width="18" height="14" rx="2"/>
+            <path d="M3 7l9 6 9-6"/>
+          </svg>
+
+          <a href="mailto:englishwesma@gmail.com">
+            englishwesma@gmail.com
+          </a>
+        </div>
+
+        <div class="avail">
+          <span
+            class="avail-strong"
+            data-en="Online, wherever you are."
+            data-tr="Nerede olursanız olun, online.">
+            Online, wherever you are.
+          </span>
+
+          <span
+            data-en="I work with learners in Australia and around the world — sessions are arranged to suit your goals, needs and schedule."
+            data-tr="Avustralya'da ve dünyanın farklı yerlerinde öğrencilerle çalışıyorum. Dersler hedeflerinize, ihtiyaçlarınıza ve programınıza göre planlanır.">
+            I work with learners in Australia and around the world — sessions are arranged to suit your goals, needs and schedule.
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+
+      <div class="fbrand">
+        <a class="brand" href="#top">
+          <svg class="mark" viewBox="0 0 32 32" aria-hidden="true">
+            <path d="M16 27 C15 20 17 17 16 9.5"
+                  stroke="#EEE8D8"
+                  stroke-width="1.7"
+                  fill="none"
+                  stroke-linecap="round"/>
+
+            <path d="M16 15.5 C11 14.5 9 11.2 9.6 8 C13 8 15.6 10.2 16 14 Z"
+                  fill="#C7973C"/>
+
+            <path d="M16 19 C21 18 23 14.8 22.4 11.6 C19 11.6 16.4 13.8 16 17.6 Z"
+                  fill="#5E7355"/>
+          </svg>
+
+          <span
+            data-en="Esma Cinar<small>Online English tutoring</small>"
+            data-tr="Esma Cinar<small>Online İngilizce dersleri</small>">
+            Esma Cinar
+            <small>Online English tutoring</small>
+          </span>
+        </a>
+
+        <p
+          data-en="Personalised online English lessons for adults, children and young people — from everyday communication to IELTS and PTE preparation."
+          data-tr="Yetişkinler, çocuklar ve gençler için kişiselleştirilmiş online İngilizce dersleri — günlük İngilizceden IELTS ve PTE hazırlığına.">
+          Personalised online English lessons for adults, children and young people — from everyday communication to IELTS and PTE preparation.
+        </p>
+      </div>
+
+
+      <div class="fcol">
+        <h4
+          data-en="Lessons"
+          data-tr="Dersler">
+          Lessons
+        </h4>
+
+        <a href="#services"
+           data-en="IELTS Preparation"
+           data-tr="IELTS Hazırlık">
+          IELTS Preparation
+        </a>
+
+        <a href="#services"
+           data-en="PTE Preparation"
+           data-tr="PTE Hazırlık">
+          PTE Preparation
+        </a>
+
+        <a href="#services"
+           data-en="General English"
+           data-tr="Genel İngilizce">
+          General English
+        </a>
+
+        <a href="#services"
+           data-en="English for Children &amp; Young People"
+           data-tr="Çocuklar ve Gençler için İngilizce">
+          English for Children &amp; Young People
+        </a>
+      </div>
+
+
+      <div class="fcol">
+        <h4
+          data-en="Explore"
+          data-tr="Keşfet">
+          Explore
+        </h4>
+
+        <a href="#about"
+           data-en="About Esma"
+           data-tr="Esma hakkında">
+          About Esma
+        </a>
+
+        <a href="#approach"
+           data-en="How I teach"
+           data-tr="Nasıl öğretiyorum">
+          How I teach
+        </a>
+
+        <a href="#quals"
+           data-en="Qualifications"
+           data-tr="Eğitim ve deneyim">
+          Qualifications
+        </a>
+
+        <a href="#contact"
+           data-en="Contact"
+           data-tr="İletişim">
+          Contact
+        </a>
+      </div>
+
+
+      <div class="fcol">
+        <h4
+          data-en="Connect"
+          data-tr="İletişim">
+          Connect
+        </h4>
+
+        <a href="mailto:englishwesma@gmail.com">
+          englishwesma@gmail.com
+        </a>
+
+        <div class="social">
+
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"
+                 fill="none"
+                 stroke="#EEE8D8"
+                 stroke-width="1.6">
+              <rect x="3" y="3" width="18" height="18" rx="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.5" cy="6.5" r="1"/>
+            </svg>
+          </a>
+
+          <a href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"
+                 fill="none"
+                 stroke="#EEE8D8"
+                 stroke-width="1.6">
+              <path d="M15 3h-3a4 4 0 00-4 4v3H5v4h3v7h4v-7h3l1-4h-4V7a1 1 0 011-1h3z"/>
+            </svg>
+          </a>
+
+          <a href="#" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24"
+                 fill="none"
+                 stroke="#EEE8D8"
+                 stroke-width="1.6">
+              <rect x="3" y="3" width="18" height="18" rx="3"/>
+              <path d="M7 10v7M7 7v.01M11 17v-4a2 2 0 014 0v4"/>
+            </svg>
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="fbot">
+      <span
+        data-en="Based in Melbourne · Teaching worldwide, online"
+        data-tr="Melbourne merkezli · Dünya genelinde online eğitim">
+        Based in Melbourne · Teaching worldwide, online
+      </span>
+
+      <span>
+        © <span id="yr"></span>
+        <span
+          data-en="Esma Cinar · VIT-registered teacher"
+          data-tr="Esma Cinar · VIT kayıtlı öğretmen">
+          Esma Cinar · VIT-registered teacher
+        </span>
+      </span>
+    </div>
+
+  </div>
+</footer>
+
+
+<script>
+
+  var TITLES = {
+    en: "Esma Cinar — Online English Lessons | IELTS & PTE Preparation",
+    tr: "Esma Cinar — Online İngilizce Dersleri | IELTS & PTE Hazırlık"
+  };
+
+  var lang = 'en';
+  var langBtn = document.getElementById('lang');
+  var langLabel = document.getElementById('langlabel');
+
+  function applyLang(l) {
+    lang = l;
+
+    document.documentElement.lang = l;
+    document.title = TITLES[l];
+
+    document.querySelectorAll('[data-en]').forEach(function(el) {
+      var v = el.getAttribute('data-' + l);
+      if (v !== null) {
+        el.innerHTML = v;
+      }
+    });
+
+    document.querySelectorAll('[data-en-ph]').forEach(function(el) {
+      var v = el.getAttribute('data-' + l + '-ph');
+
+      if (v !== null) {
+        el.setAttribute('placeholder', v);
+        el.setAttribute('aria-label', v);
+      }
+    });
+
+    langLabel.textContent = (l === 'en') ? 'Türkçe' : 'English';
+
+    langBtn.setAttribute(
+      'aria-label',
+      (l === 'en')
+        ? 'Bu siteyi Türkçe görüntüle'
+        : 'View this site in English'
+    );
+  }
+
+  langBtn.addEventListener('click', function() {
+    applyLang(lang === 'en' ? 'tr' : 'en');
+  });
+
+
+  // Current year
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+
+  // Navigation scroll state
+  var nav = document.getElementById('nav');
+
+  var onScroll = function() {
+    nav.classList.toggle('scrolled', window.scrollY > 40);
+  };
+
+  onScroll();
+
+  window.addEventListener('scroll', onScroll, {
+    passive: true
+  });
+
+
+  // Mobile menu
+  var toggle = document.getElementById('toggle');
+  var menu = document.getElementById('menu');
+
+  toggle.addEventListener('click', function() {
+    var open = menu.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+  });
+
+  menu.querySelectorAll('a').forEach(function(a) {
+    a.addEventListener('click', function() {
+      menu.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+
+  // Scroll reveal
+  var reduce = window.matchMedia(
+    '(prefers-reduced-motion: reduce)'
+  ).matches;
+
+  var items = document.querySelectorAll('.reveal');
+
+  if ('IntersectionObserver' in window && !reduce) {
+
+    var io = new IntersectionObserver(function(entries) {
+
+      entries.forEach(function(e) {
+
+        if (e.isIntersecting) {
+          e.target.classList.add('in');
+          io.unobserve(e.target);
+        }
+
+      });
+
+    }, {
+      threshold: .14,
+      rootMargin: '0px 0px -40px 0px'
+    });
+
+    items.forEach(function(el) {
+      io.observe(el);
+    });
+
+  } else {
+
+    items.forEach(function(el) {
+      el.classList.add('in');
+    });
+
+  }
+
+
+  // Contact form -> email
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+
+    e.preventDefault();
+
+    var f = e.target;
+
+    var subject =
+      'English lesson enquiry — ' +
+      (f.name.value || 'New enquiry');
+
+    var body =
+      'Name: ' + f.name.value +
+      '\nEmail: ' + f.email.value +
+      '\nAge / level / exam goal: ' + (f.year.value || '—') +
+      '\n\nMessage:\n' + f.message.value;
+
+    window.location.href =
+      'mailto:englishwesma@gmail.com?subject=' +
+      encodeURIComponent(subject) +
+      '&body=' +
+      encodeURIComponent(body);
+
+  });
+
+
+  // Guide opt-in -> email
+  var optinForm = document.getElementById('optinForm');
+
+  if (optinForm) {
+
+    optinForm.addEventListener('submit', function(e) {
+
+      e.preventDefault();
+
+      window.location.href =
+        'mailto:englishwesma@gmail.com?subject=' +
+        encodeURIComponent('Website enquiry') +
+        '&body=' +
+        encodeURIComponent(
+          'Hi Esma, I would like more information. My email: ' +
+          e.target.email.value
+        );
+
+    });
+
+  }
+
+</script>
+
+</body>
+</html>
