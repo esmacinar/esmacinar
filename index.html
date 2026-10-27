@@ -105,8 +105,8 @@
     position:relative;z-index:2;overflow:hidden;}
   .portrait .ph-ic{width:52px;height:52px;opacity:.6;margin-bottom:12px;}
   .portrait span{font-size:.82rem;letter-spacing:.02em;max-width:20ch;padding:0 20px;}
-  .sprig-hero{position:absolute;z-index:1;width:150px;right:-6px;bottom:-14px;}
-  .sprig-hero.two{left:-18px;top:-10px;bottom:auto;right:auto;width:96px;transform:rotate(18deg);opacity:.85;}
+  .sprig-hero{position:absolute;z-index:1;width:130px;right:-64px;bottom:4%;}
+  .sprig-hero.two{left:-58px;top:14%;bottom:auto;right:auto;width:104px;transform:rotate(-14deg);opacity:1;}
 
   .stem{stroke-dasharray:420;stroke-dashoffset:420;animation:draw 1.7s ease .25s forwards;}
   .lf{opacity:0;animation:fadein .6s ease forwards;}
@@ -211,6 +211,8 @@
   @media(max-width:900px){
     .hero .grid{grid-template-columns:1fr;gap:40px;}
     .portrait-wrap{order:-1;}
+    .sprig-hero{right:2px;width:96px;}
+    .sprig-hero.two{left:2px;width:76px;}
     .cards,.qcards{grid-template-columns:1fr 1fr;}
     .about .grid,.contact .grid,.guide .box{grid-template-columns:1fr;gap:34px;}
     .principles{grid-template-columns:1fr;}
